@@ -64,7 +64,11 @@ a {
 }
 
 #navbar {
-    overflow: auto;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -79,6 +83,7 @@ a {
 
 #navbar a {
     color: black;
+    display: block;
 }
 
 #navbar ul {
