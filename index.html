@@ -112,33 +112,53 @@
 
     <section class="know-me">
         <fieldset>
-            <legend id="radio-choice">where did you hear about me?</legend>
+            <legend id="radio-choice">how did you find me?</legend>
             <div>
-                <input type="radio" name="choice" id="university" value="university">
+                <input required type="radio" name="choice" id="university" value="university">
                 <label class="form" for="university">University</label>
             </div>
             <div>
-                <input type="radio" name="choice" id="keepcoding" value="keepcoding">
+                <input required type="radio" name="choice" id="keepcoding" value="keepcoding">
                 <label class="form" for="keepcoding">KeepCoding Kick-Off</label>
             </div>
             <div>
-                <input type="radio" name="choice" id="school" value="school">
+                <input required type="radio" name="choice" id="school" value="school">
                 <label class="form" for="school">School</label>
             </div>
             <div>
-                <input type="radio" name="choice" id="github" value="github">
+                <input required type="radio" name="choice" id="github" value="github">
                 <label class="form" for="github">Github</label>
             </div>
             <div>
-                <input type="radio" name="choice" id="tinder" value="tinder">
+                <input required type="radio" name="choice" id="tinder" value="tinder">
                 <label class="form" for="tinder">Tinder</label>
             </div>
         </fieldset>
     </section>
-    <section>
+
+    <div class="message">
+        <label for="message">Send me a message!</label>
+        <textArea id="message" name="message" maxlength="180" placeholder="Tell me more about you ✌️. Keep it simple (180 characters)."></textarea>
+        </section>
+    <div>
         <button type="submit" value="Submit">Submit</button>
-    </section>
+    </div>
 </form>
 </main>
+
+<footer class="footer">
+    <nav>
+        <a href="#" target="_blank">
+            <img src="#" alt="linkedin">
+        </a>
+
+        <a href="#" target="_blank">
+            <img src="#" alt="github">
+        </a>
+
+        <a href="#" target="_blank">
+            <img src="#" alt="twitter">
+        </a>
+    </nav>
 </body>
 </html>
