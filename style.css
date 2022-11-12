@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /* Style for main elements */
 
 html, body {
@@ -20,13 +22,115 @@ legend {
     font-size: 1.5rem;
 }
 
-h1, h2, h3, legend {
-    text-transform: uppercase;
+h1, h2, h3 {
+    text-transform: lowercase;
     font-weight: 900;
 }
 
+legend {
+    text-transform: lowercase;
+    font-weight: 700;
+}
 p {
     font-size: 1rem;
     margin: 10px 0;
     line-height: 1.7em;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Utility classes */
+
+.container {
+    margin: auto;
+    max-width: 1300px;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.description {
+    font-size: 1.25rem;
+}
+
+.display-1 {
+    font-size: 6rem;
+}
+
+/* Navbar */
+.navbar-home {
+    height: 10vh;
+}
+
+#navbar {
+    overflow: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#navbar .logo {
+    float: left;
+    padding-top: 5px
+}
+#navbar .logo img {
+    height: 30px;
+}
+
+#navbar a {
+    color: black;
+}
+
+#navbar ul {
+    float: right;
+    font-size: 16px;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+#navbar ul li a:hover {
+    color: rgb(247, 10, 255);
+}
+
+/* Front Page */
+#front-page {
+    height: 80vh;
+    background: rgb(235, 233, 233);
+    padding: 150px 0;
+}
+
+#front-page h1 {
+    line-height: 1em;
+}
+
+#front-page .highlighted {
+    color: aliceblue;
+    -webkit-text-stroke: 2px #000;
+}
+
+.front-page-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.front-page-title {
+    padding-top: 70px;
+}
+
+.front-page-row-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.front-page-row-image img {
+    height: 300px;
+
 }
