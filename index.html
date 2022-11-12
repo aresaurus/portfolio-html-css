@@ -10,43 +10,56 @@
     <meta name="description" content="andrea ares is a translator specialized in website and media content localization &amp; an aspiring front-end developer who is currently doing a web dev bootcamp and would greatly appreciate prayers and coffee.">
     <meta name="author" content="Andrea Ares">
     <title>👑 andrea ares ✷ translator & aspiring front-end developer</title>
-    
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <header>
-        <div class="top-bar">
-            <a href="#" class="logo">
-                <img src="#" alt="Andrea Ares">
-            </a>       
-        </div>
-
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="#about-me" class="nav-link" id="nav-link-about">about me</a>
-                </li>
-                <li>
-                    <a href="#skills" class="nav-link" id="nav-link-skills">skills</a>
-                </li>
-                <li>
-                    <a href="#contact" class="nav-link" id="nav-link-contact">contact</a>
-                </li>
-            </ul>
+    <header id="mainheader">
+        <nav class="navbar" class="nav-home">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="images/favicon-16x16.png" alt="Andrea Ares">
+                </a>       
+                <ul>
+                    <li>
+                        <a href="#about-me" class="nav-link" id="nav-link-about">about me</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="nav-link" id="nav-link-skills">skills</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link" id="nav-link-contact">contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+
+        <div id="showcase">
+            <div class="container">
+                <div class="showcase-row">
+                    <div class="showcase row-title">
+                        <h1 class="display-1">my <span class="highlighted">portfolio</span></h1>
+                        <p class="description">aspiring web developer & designer</p>
+                    </div>
+                    <div class="showcase row-image">
+                        <img src="#" alt="showcase-image">
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
 <main>
-    <div class="name">
-        <h1>Andrea Ares</h1>
-    </div>
-
-    <section class="about-me">
+    <section class="about-me" id="about-me">
+        <div class="container">
         <h2>about me</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eveniet provident. Officia ipsum temporibus esse blanditiis excepturi ab nostrum perspiciatis suscipit pariatur facilis. Eveniet aut autem incidunt quis neque. Dolores.
         Dolorum adipisci nobis facere vero molestias necessitatibus omnis quis praesentium sint dolores laborum provident totam dignissimos, quasi minus iusto modi. Animi quaerat mollitia nostrum, fugit cum in saepe sequi vel!
         Ea aspernatur repellendus tempora totam eligendi non voluptatem officiis, quaerat culpa illum, aliquid voluptate dicta, sed quasi ipsum earum doloribus beatae molestiae! Est blanditiis quaerat aperiam esse recusandae dolore repudiandae?
         Dolore, deleniti cum, eveniet assumenda facilis quam ullam vel maiores ducimus nulla cumque minus ratione sapiente ipsam voluptates ab error molestias! Cumque laboriosam omnis autem, natus amet enim quae ratione.</p>
+    </div>
     </section>
 
     <section class="skills" id="skills">
@@ -146,7 +159,7 @@
 </form>
 </main>
 
-<footer class="footer">
+<footer id="footer" class="footer">
     <nav>
         <a href="#" target="_blank">
             <img src="#" alt="linkedin">
