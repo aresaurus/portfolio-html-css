@@ -30,7 +30,7 @@
                         <a href="#skills" class="nav-link" id="nav-link-skills">skills</a>
                     </li>
                     <li>
-                        <a href="#contact" class="nav-link" id="nav-link-contact">contact</a>
+                        <a href="#contact-form" class="nav-link" id="nav-link-contact">contact</a>
                     </li>
                 </ul>
             </div>
@@ -108,64 +108,61 @@
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact-form" id="contact-form">
         <form action="#" method="post">
+            <div id="contact-form-container">
+                <div class="contact-info">
+                    <h3>let's get in touch!</h3>
+                        <div>
+                            <label for="name" class="contact">Name:</label>
+                            <input type="text" name="name" id="name" placeholder="Enter your name..." required>
+                        </div>
+                        <div class="contact">
+                            <label for="last-name" class="contact">Last Name:</label>
+                            <input type="text" name="last-name" id="last-name" placeholder="... and your last name" required>
+                        </div>
+                        <div class="contact">
+                            <label for="phone-number" class="contact">Phone Number:</label>
+                            <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="and your number..." required>
+                        </div>
+                        <div class="contact">
+                            <label for="github-username" class="contact">Github:</label>
+                            <input type="text" name="github-username" id="github-username" pattern="^@[^\s]+" placeholder="and why not your Github?">
+                        </div>
+                </div>
 
-            <fieldset>
-                <legend id="contact">let's get in touch!</legend>
-            
-                    <div class="contact">
-                        <label for="name" class="contact-text">Name:</label>
-                        <input type="text" name="name" id="name" placeholder="Enter your name..." required>
-                    </div>
-                    <div class="contact">
-                        <label for="last-name" class="contact">Last Name:</label>
-                        <input type="text" name="last-name" id="last-name" placeholder="... and your last name" required>
-                    </div>
-                    <div>
-                        <label for="phone-number" class="contact">Phone Number:</label>
-                        <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="and your number..." required>
-                    </div>
-                    <div>
-                        <label for="github-username" class="github">Github:</label>
-                        <input type="text" name="github-username" id="github-username" pattern="^@[^\s]+" placeholder="and why not your Github?">
-                    </div>
-            </fieldset>
+                <div class="contact-info-2">
+                    <h3>where did you hear about me?</h3>
+                        <div>
+                            <input required type="radio" name="choice" id="university" value="university">
+                            <label class="form" for="university">University</label>
+                        </div>
+                        <div>
+                            <input required type="radio" name="choice" id="keepcoding" value="keepcoding">
+                            <label class="form" for="keepcoding">KeepCoding Kick-Off</label>
+                        </div>
+                        <div>
+                            <input required type="radio" name="choice" id="school" value="school">
+                            <label class="form" for="school">School</label>
+                        </div>
+                        <div>
+                            <input required type="radio" name="choice" id="github" value="github">
+                            <label class="form" for="github">Github</label>
+                        </div>
+                        <div>
+                            <input required type="radio" name="choice" id="tinder" value="tinder">
+                            <label class="form" for="tinder">Tinder</label>
+                        </div>
+                </div>
     </section>
+            </div>
 
-
-    <section class="know-me">
-        <fieldset>
-            <legend id="radio-choice">how did you find me?</legend>
-            <div>
-                <input required type="radio" name="choice" id="university" value="university">
-                <label class="form" for="university">University</label>
-            </div>
-            <div>
-                <input required type="radio" name="choice" id="keepcoding" value="keepcoding">
-                <label class="form" for="keepcoding">KeepCoding Kick-Off</label>
-            </div>
-            <div>
-                <input required type="radio" name="choice" id="school" value="school">
-                <label class="form" for="school">School</label>
-            </div>
-            <div>
-                <input required type="radio" name="choice" id="github" value="github">
-                <label class="form" for="github">Github</label>
-            </div>
-            <div>
-                <input required type="radio" name="choice" id="tinder" value="tinder">
-                <label class="form" for="tinder">Tinder</label>
-            </div>
-        </fieldset>
-    </section>
-
-    <div class="message">
+    <section class="message">
         <label for="message">Send me a message!</label>
         <textArea id="message" name="message" maxlength="180" placeholder="Tell me more about you ✌️. Keep it simple (180 characters)."></textarea>
-        </section>
-    <div>
-        <button type="submit" value="Submit">Submit</button>
+    </section>
+    <div class="submit-button">
+        <button type="submit" value="Submit" class="button-submit">Submit</button>
     </div>
 </form>
 </main>

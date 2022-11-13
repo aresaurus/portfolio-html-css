@@ -172,7 +172,7 @@ hr {
 
 /* Skills */
 #skills { 
-    padding: 90px 0;
+    padding: 150px 0 0 0;
     background: rgb(241, 240, 240);
     margin: auto;
 }
@@ -302,3 +302,81 @@ hr {
     width: 100%;
     height: 10vh;
 }
+
+/* Contact Form */
+#contact-form-container h3 {
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+#contact-form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-info {
+    float: left;
+    margin: 30px;
+}
+
+.contact-info input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+
+.contact-info-2 {
+    float: right;
+    margin: auto;
+}
+
+.contact {
+    padding-top: 10px;
+}
+
+
+.button-submit {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+      
+.button-submit:after {
+    content: "";
+    background-color: #ffeb7a;
+    width: 100%;
+    z-index: -1;
+    border-radius: 5px;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+      
+.button-submit:hover:after {
+    top: 0px;
+    left: 0px;
+}
+
+@media (min-width: 768px) {
+    .button-52 {
+      padding: 13px 50px 13px;
+    }
+  }
