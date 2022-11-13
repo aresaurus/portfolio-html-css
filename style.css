@@ -116,14 +116,18 @@ a {
 }
 
 
-#navbar ul li a {
-    display: block;
-    padding: 20px;
-    text-align: center;
+@media only screen and (min-width:768px) {
+    #navbar ul li a {
+        display: block;
+        padding: 20px;
+        text-align: center;
+        transition: color 0.5s ease-in;
+    }
+    #navbar ul li a:hover {
+        color: #A8DCD1;
+    }
 }
-#navbar ul li a:hover {
-    color: #A8DCD1;
-}
+
 
 /* Front Page */
 #front-page {
