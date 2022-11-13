@@ -122,7 +122,7 @@ a {
     text-align: center;
 }
 #navbar ul li a:hover {
-    color: rgb(247, 10, 255);
+    color: #A8DCD1;
 }
 
 /* Front Page */
@@ -194,6 +194,8 @@ a {
 @media only screen and (min-width:768px) {
     #about-me {
         padding: 90px 0;
+        margin-left: 20%;
+        margin-right: 20%;
     }
 }
 
@@ -217,7 +219,8 @@ a {
 
 @media only screen and (min-width:768px) {
     #skills { 
-        margin-left: 30px;
+        margin-left: 20%;
+        margin-right: 20%;
     }
 }
 
@@ -349,11 +352,9 @@ a {
 
 #contact-form {
     padding-top: 5px;
-    margin: 5%;
+    margin: 20px 0 10px 30px;
     width: 100%;
-    background: rgb(255, 255, 255);
 }
-
 
 #contact-form-container h3 {
     font-size: 2em;
@@ -363,9 +364,8 @@ a {
 
 @media only screen and (min-width:768px) {
     #contact-form {
-        padding-top: 5px;
+        padding-top: 50px;
         margin-left: 30px;
-        width: 100%;
         }
 
     #contact-form-container h3 {
@@ -374,7 +374,6 @@ a {
         padding-top: 30px;
         }
     }
-
 
 #contact-form-container {
     padding: 20px 0 10px 0;
@@ -385,14 +384,6 @@ a {
 @media only screen and (min-width:768px) {
     #contact-form-container {
         display: flex;
-        justify-content: space-between;
-    }
-}
-
-@media only screen and (min-width:768px) {
-    #contact-form-container {
-        display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
     }
 
@@ -543,3 +534,16 @@ textarea {
     width: 100%;
     height: 10%;
 }
+
+
+#footer img {
+    height: 30px;
+    width: 30px;
+    margin: 0 20px 10px 0;
+}
+
+@media (min-width: 768px) {
+    #footer {
+        height: 15vh;
+    }
+  }
