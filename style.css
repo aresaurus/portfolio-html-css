@@ -7,19 +7,23 @@ html, body {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 h3 {
-    font-size: 1.75rem;
+    font-size: 2.75rem;
+}
+
+h4 {
+    font-size: 2.5rem;
 }
 
 legend {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 h1, h2, h3 {
@@ -107,7 +111,7 @@ a {
 /* Front Page */
 #front-page {
     height: 80vh;
-    background: rgb(235, 233, 233);
+    background: rgb(241, 240, 240);
     padding: 150px 0;
 }
 
@@ -138,4 +142,163 @@ a {
 .front-page-row-image img {
     height: 300px;
 
+}
+
+/* About me section */
+#about-me {
+    padding: 150px 0;
+    background-color: rgb(245, 245, 245);
+}
+
+#about-me h2 {
+    padding-bottom: 50px;
+}
+
+.about-row {
+    display: flex;
+}
+
+.about-row-image img {
+    height: 300px;
+    width: 400px;
+    padding-right: 90px;
+}
+
+hr {
+    width: 61%;
+    margin-bottom: 30px;
+    margin-left: 0px;
+}
+
+/* Skills */
+#skills { 
+    padding: 90px 0;
+    background: rgb(241, 240, 240);
+    margin: auto;
+}
+
+#skills h3 {
+    padding-bottom: 20px;
+    margin: 50px
+}
+
+
+.container-skills {
+    display: flex;
+    padding-bottom: 50px;
+    margin: 50px
+}
+
+.skills-row-left, .skills-row-right {
+    width: 50%;
+}
+
+
+.skill-bar {
+    border-radius: 10px;
+    border: 1px solid grey;
+    height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+#skill-html {
+    animation-name: html-progress;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes html-progress {
+    from {
+         width: 0%; 
+         background-color: aliceblue;}
+    to {
+        width: 50%; 
+        background-color: rgb(113, 141, 165);}
+}
+
+#skill-css {
+    animation-name: css-progress;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes css-progress {
+    from {
+         width: 0%; 
+         background-color: aliceblue;}
+    to {
+        width: 35%; 
+        background-color: rgb(113, 165, 130);}
+}
+
+#skill-js {
+    animation-name: js-progress;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes js-progress {
+    from {
+         width: 0%; 
+         background-color: aliceblue;}
+    to {
+        width: 15%; 
+        background-color: rgb(243, 214, 134);}
+}
+
+#skill-python {
+    animation-name: python-progress;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes python-progress {
+    from {
+         width: 0%; 
+         background-color: aliceblue;}
+    to {
+        width: 40%; 
+        background-color: rgb(243, 141, 134);}
+}
+
+#skill-adobe {
+    animation-name: adobe-progress;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes adobe-progress {
+    from {
+         width: 0%; 
+         background-color: aliceblue;}
+    to {
+        width: 30%; 
+        background-color: rgb(205, 114, 241);}
+}
+
+#skill-awesomeness {
+    animation-name: awesomeness-progress;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes awesomeness-progress {
+    from {
+         width: 0%; 
+         background-color: aliceblue;}
+    to {
+        width: 80%; 
+        background-color: rgb(148, 214, 189);}
+}
+
+#footer {
+    background:rgb(235, 233, 233);
+    text-align: center;
+    padding: 30px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
 }
