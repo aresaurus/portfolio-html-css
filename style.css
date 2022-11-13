@@ -97,6 +97,8 @@ a {
 
 #navbar ul li {
     float: left;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 #navbar ul li a {
@@ -111,7 +113,7 @@ a {
 /* Front Page */
 #front-page {
     height: 80vh;
-    background: rgb(241, 240, 240);
+    background: #ffffff;
     padding: 150px 0;
 }
 
@@ -147,7 +149,7 @@ a {
 /* About me section */
 #about-me {
     padding: 150px 0;
-    background-color: rgb(245, 245, 245);
+    background-color: #ffffff;
 }
 
 #about-me h2 {
@@ -173,7 +175,7 @@ hr {
 /* Skills */
 #skills { 
     padding: 150px 0 0 0;
-    background: rgb(241, 240, 240);
+    background: rgb(255, 255, 255);
     margin: auto;
 }
 
@@ -304,6 +306,12 @@ hr {
 }
 
 /* Contact Form */
+
+#contact-form {
+    padding: 150px 0 0 0;
+    background: rgb(255, 255, 255);
+
+}
 #contact-form-container h3 {
     font-size: 2em;
     padding-bottom: 20px;
@@ -319,10 +327,14 @@ hr {
     margin: 30px;
 }
 
+.contact-info .contact {
+    font-size: 20px;
+}
+
 .contact-info input {
     display: flex;
     flex-direction: column;
-    margin-top: 5px;
+    margin-top: 10px;
     padding: 5px;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 5px;
@@ -332,10 +344,49 @@ hr {
 .contact-info-2 {
     float: right;
     margin: auto;
+    margin-top: 30px;
 }
 
 .contact {
     padding-top: 10px;
+}
+
+form input[type="radio"] {
+    width: 1.5em;
+    height: 1.5em;
+} 
+
+.contact-info-2 div {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.form {
+    font-size: 20px;
+}
+
+.message-me {
+    margin: auto;
+    padding: 20px 30px;
+}
+
+.message-me label {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+textarea {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 30%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
 }
 
 
@@ -345,7 +396,7 @@ hr {
     letter-spacing: 1px;
     padding: 13px 20px 13px;
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 30px;
     border-radius: 5px;
     outline: 0;
     border: 1px solid black;
