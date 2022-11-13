@@ -31,10 +31,6 @@ h1, h2, h3 {
     font-weight: 900;
 }
 
-legend {
-    text-transform: lowercase;
-    font-weight: 700;
-}
 p {
     font-size: 1rem;
     margin: 10px 0;
@@ -59,22 +55,40 @@ a {
 }
 
 .display-1 {
-    font-size: 6rem;
+    font-size: 4rem;
+}
+
+@media only screen and (min-width:768px) {
+    .display-1 {
+        font-size: 6em;
+    }
 }
 
 /* Navbar */
 .navbar-home {
-    height: 10vh;
+    height: 10%;
+}
+
+@media only screen and (min-width:768px) {
+    .navbar-home {
+        font-size: 10vh;
+    }
 }
 
 #navbar {
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    overflow: auto;
     background-color: white;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+@media only screen and (min-width:768px) {
+    #navbar {
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%; 
+    }
 }
 
 #navbar .logo {
@@ -101,6 +115,7 @@ a {
     font-weight: 700;
 }
 
+
 #navbar ul li a {
     display: block;
     padding: 20px;
@@ -112,9 +127,17 @@ a {
 
 /* Front Page */
 #front-page {
-    height: 80vh;
+    height: 100%;
+    padding: 50px 0 20px 0;
     background: #ffffff;
-    padding: 150px 0;
+    
+}
+
+@media only screen and (min-width:768px) {
+    #front-page {
+        height: 80vh;
+        padding: 150px 0;
+    }
 }
 
 #front-page h1 {
@@ -127,14 +150,30 @@ a {
 }
 
 .front-page-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width:768px) {
+    .front-page-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 .front-page-title {
-    padding-top: 70px;
+    width: 100%;
+	padding-top: 0;
+	padding-bottom: 20px;
+	text-align: center;
 }
+
+@media only screen and (min-width:768px) {
+    .front-page-title {
+        padding-top: 70px;
+    }
+}
+
 
 .front-page-row-image {
     display: block;
@@ -148,47 +187,57 @@ a {
 
 /* About me section */
 #about-me {
-    padding: 150px 0;
+    padding: 10px 0;
     background-color: #ffffff;
 }
 
+@media only screen and (min-width:768px) {
+    #about-me {
+        padding: 90px 0;
+    }
+}
+
 #about-me h2 {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
-.about-row {
-    display: flex;
+@media only screen and (min-width:768px) {
+    #about-me h2 {
+        padding-bottom: 50px;
+    }
 }
 
-.about-row-image img {
-    height: 300px;
-    width: 400px;
-    padding-right: 90px;
-}
-
-hr {
-    width: 61%;
-    margin-bottom: 30px;
-    margin-left: 0px;
-}
 
 /* Skills */
 #skills { 
-    padding: 150px 0 0 0;
+    padding: 20px 0 0 0;
     background: rgb(255, 255, 255);
-    margin: auto;
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width:768px) {
+    #skills { 
+        margin-left: 30px;
+    }
 }
 
 #skills h3 {
-    padding-bottom: 20px;
-    margin: 50px
+    padding: 30px 0 10px 0;
+    margin: 30px;
 }
 
+@media only screen and (min-width:768px) {
+    #skills h3 { 
+        padding: 20px 0 0 0;
+        margin-left: 30px;
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+}
 
 .container-skills {
     display: flex;
-    padding-bottom: 50px;
-    margin: 50px
+    margin: 30px
 }
 
 .skills-row-left, .skills-row-right {
@@ -295,37 +344,71 @@ hr {
         background-color: rgb(148, 214, 189);}
 }
 
-#footer {
-    background:rgb(235, 233, 233);
-    text-align: center;
-    padding: 30px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 10vh;
-}
 
 /* Contact Form */
 
 #contact-form {
-    padding: 150px 0 0 0;
+    padding-top: 5px;
+    margin: 5%;
+    width: 100%;
     background: rgb(255, 255, 255);
-
 }
+
+
 #contact-form-container h3 {
     font-size: 2em;
-    padding-bottom: 20px;
-}
-#contact-form-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 50px;
 }
 
-.contact-info {
-    float: left;
-    margin: 30px;
+@media only screen and (min-width:768px) {
+    #contact-form {
+        padding-top: 5px;
+        margin-left: 30px;
+        width: 100%;
+        }
+
+    #contact-form-container h3 {
+        font-size: 2em;
+        padding-bottom: 10px;
+        padding-top: 30px;
+        }
+    }
+
+
+#contact-form-container {
+    padding: 20px 0 10px 0;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
 }
+
+@media only screen and (min-width:768px) {
+    #contact-form-container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    #contact-form-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .contact-info {
+        float: left;
+        margin: 30px;
+    }
+
+    .contact-info-2 {
+        float: right;
+        margin: auto;
+        margin-top: 30px;
+    }
+    
+}
+
 
 .contact-info .contact {
     font-size: 20px;
@@ -340,12 +423,6 @@ hr {
     border-radius: 5px;
 }
 
-
-.contact-info-2 {
-    float: right;
-    margin: auto;
-    margin-top: 30px;
-}
 
 .contact {
     padding-top: 10px;
@@ -365,8 +442,19 @@ form input[type="radio"] {
 }
 
 .message-me {
-    margin: auto;
-    padding: 20px 30px;
+    margin: 10px 0 0 0;
+    padding: 10px 30px;
+}
+
+#message {
+    margin-top: 20px;
+}
+
+@media only screen and (min-width:768px) {
+    .message-me {
+        margin: 0 0 0 30px;
+        padding: 20px 30px;
+    }
 }
 
 .message-me label {
@@ -375,10 +463,9 @@ form input[type="radio"] {
 }
 
 textarea {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    width: 30%;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
     height: 100px;
     padding: 12px 20px;
     box-sizing: border-box;
@@ -389,7 +476,21 @@ textarea {
     resize: none;
 }
 
-
+@media only screen and (min-width:768px) {
+    textarea {
+        display: flex;
+        margin: 20px 0 0 0;
+        width: 30%;
+        height: 100px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+    }
+}
 .button-submit {
     font-size: 16px;
     font-weight: 200;
@@ -427,7 +528,18 @@ textarea {
 }
 
 @media (min-width: 768px) {
-    .button-52 {
+    .button-submit {
       padding: 13px 50px 13px;
+      margin: 0 0 20px 60px;
     }
   }
+
+  #footer {
+    background:rgb(235, 233, 233);
+    text-align: center;
+    padding: 30px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+}
